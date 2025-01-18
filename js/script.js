@@ -11,6 +11,7 @@ let speed = 100;
 const textElements = document.querySelector(".typewriter-text");
 let textIndex = 0;
 let charcterIndex = 0;
+
 function typeWriter() {
   if (charcterIndex < texts[textIndex].length) {
     textElements.innerHTML += texts[textIndex].charAt(charcterIndex);

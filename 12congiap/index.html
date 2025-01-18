@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="img/model.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12 con giáp</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #d2d2d2;
+        background-image: repeating-linear-gradient(
+            to right,
+            transparent 0 100px,
+            #25283b22 100px 101px
+          ),
+          repeating-linear-gradient(
+            to bottom,
+            transparent 0 100px,
+            #25283b22 100px 101px
+          );
+      }
+
+      body::before {
+        position: absolute;
+        width: min(1400px, 90vw);
+        top: 10%;
+        left: 50%;
+        height: 90%;
+        transform: translateX(-50%);
+        content: "";
+        background-image: url(img/bg.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        pointer-events: none;
+      }
+    </style>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <div class="slider" style="--quantity: 12">
+        <div class="item" style="--position: 1">
+          <img src="img/ty.jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 2">
+          <img src="img/suu.webp" alt="" />
+        </div>
+        <div class="item" style="--position: 3">
+          <img src="img/dan.jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 4">
+          <img src="img/mao.jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 5">
+          <img src="img/thin.webp" alt="" />
+        </div>
+        <div class="item" style="--position: 6">
+          <img src="img/ti.jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 7">
+          <img src="img/ngo.jpeg" alt="" />
+        </div>
+        <div class="item" style="--position: 8">
+          <img src="img/mui.jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 9">
+          <img src="img/than.jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 10">
+          <img src="img/dau.jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 11">
+          <img src="img/tuat.jpg" alt="" />
+        </div>
+        <div class="item" style="--position: 12">
+          <img src="img/hoi.webp" alt="" />
+        </div>
+      </div>
+      <div class="content">
+        <div class="author">
+          <h1>Ngô Xuân Cường</h1>
+          <p><b>Việt Nam</b></p>
+        </div>
+        <div class="model"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.desktop__nav-menu-link a,
+.mobile__nav-menu-link a {
+  text-decoration: none;
+  color: white;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.img-size {
+  width: auto;
+  height: 500px;
+  background-size: cover;
+  padding: 20px;
+}
+
+.img-size:hover {
+  position: relative;
+  top: -20px;
+  scale: 1.05;
+  transition: scale 0.3s ease-in-out;
+}
